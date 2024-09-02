@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PV-Rechner/static/css/main.fb2a4d2b.css",
+    "main.js": "/PV-Rechner/static/js/main.681221fa.js",
+    "static/js/453.d05aa82c.chunk.js": "/PV-Rechner/static/js/453.d05aa82c.chunk.js",
+    "index.html": "/PV-Rechner/index.html",
+    "main.fb2a4d2b.css.map": "/PV-Rechner/static/css/main.fb2a4d2b.css.map",
+    "main.681221fa.js.map": "/PV-Rechner/static/js/main.681221fa.js.map",
+    "453.d05aa82c.chunk.js.map": "/PV-Rechner/static/js/453.d05aa82c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb2a4d2b.css",
+    "static/js/main.681221fa.js"
+  ]
+}
