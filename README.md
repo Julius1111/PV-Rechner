@@ -12,4 +12,4 @@ Ein benutzerfreundlicher Solarrechner, der Ihnen hilft, den potenziellen Energie
 
 Du kannst eine Live-Demo des Projekts unter folgendem Link ausprobieren:
 
-[Live Demo](https://DEIN_GITHUB_NUTZERNAME.github.io/meine-website)
+[Live Demo](https://julius1111.github.io/PV-Rechner/)
