@@ -4,6 +4,8 @@ import InputNumber from '../inputNumber/inputNumber.jsx';
 import InputRadioButton from '../inputRadioButton/inputRadioButton.jsx';
 import { useCalculator } from '../CalculatorContext.js';
 
+import { IoInformationCircleOutline } from "react-icons/io5";
+
 const Rechner = () => {
   
     const {
@@ -75,13 +77,13 @@ const Rechner = () => {
             <p className='customSchrift'>Ertrag und Strompreis</p>
 
             <div className='rechner_input'>
-                <p>Jählicher Stromertrag kwh pro kWp</p>
+                <p>Jählicher Stromertrag kwh pro kWp <a title="PVGIS Ertragsrechner" href='https://re.jrc.ec.europa.eu/pvg_tools/de/' target="_blank" rel="noopener noreferrer"><IoInformationCircleOutline style={{ fontSize: '20px', color: '#007BFF', transform: 'translateY(30%)'}} /></a></p>
                 <InputNumber value={stromErtrag} setValue={setStromErtrag} setIsError={setIsError} />
             </div>
 
             {einspeiseModell === '0' && 
                 <div className='rechner_input'>
-                    <p>Eigenverbrauch in %</p>
+                    <p>Eigenverbrauch in % <a title="Unabhängigkeitsrechner" href='https://solar.htw-berlin.de/rechner/unabhaengigkeitsrechner/' target="_blank" rel="noopener noreferrer"><IoInformationCircleOutline style={{ fontSize: '20px', color: '#007BFF', transform: 'translateY(30%)'}} /></a></p>
                     <InputNumber value={eigenVerbrauch} setValue={setEigenVerbrauch} setIsError={setIsError} />
                 </div>
             }
