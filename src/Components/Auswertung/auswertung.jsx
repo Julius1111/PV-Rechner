@@ -22,11 +22,15 @@ const Auswertung = ({ data}) => {
         return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(value);
     }
 
+    function formatNumber(value) {
+      return new Intl.NumberFormat('de-DE').format(value);
+  }
+
     const maxWert = Math.max(...data.uberschussProJahr).toFixed();
     const maximum = Math.ceil(maxWert / 500) * 500;
     
-    const gesErzeugterstrom = data.gesErzeugterStrom.toFixed();
-    const gesErzeugterstromEig = data.gesErzeugterStromEig.toFixed();
+    const gesErzeugterstrom = formatNumber(data.gesErzeugterStrom.toFixed());
+    const gesErzeugterstromEig = formatNumber(data.gesErzeugterStromEig.toFixed());
     const amortisation = data.amortisation.toFixed()
     const gesKosten = data.gesKosten.toFixed();
     const gewinn = formatCurrency( data.gewinn.toFixed(2));
@@ -79,7 +83,7 @@ const Auswertung = ({ data}) => {
               </div>
 
               <div className='abstandB'>
-                <p>davon selbst Verbraucht</p>
+                <p>davon selbst verbraucht</p>
                 <p>{gesErzeugterstromEig} kWh</p>
               </div>
             </div>

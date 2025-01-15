@@ -45,7 +45,7 @@ const Rechner = () => {
   return (
     <>
     <div className='centerH1'>
-        <h1 >Photovoltaik Rechner</h1>
+        <h1 >Photovoltaikrechner</h1>
     </div>
     
 
@@ -62,7 +62,7 @@ const Rechner = () => {
                     
                     
             <div className='rechner_input'>
-                <p>Anschafungskosten in €</p>
+                <p>Anschaffungskosten in €</p>
                 <InputNumber value={gesKosten} setValue={setGesKosten} setIsError={setIsError} />
             </div>
                     
@@ -77,7 +77,7 @@ const Rechner = () => {
             <p className='customSchrift'>Ertrag und Strompreis</p>
 
             <div className='rechner_input'>
-                <p>Jählicher Stromertrag kwh pro kWp <a title="PVGIS Ertragsrechner" href='https://re.jrc.ec.europa.eu/pvg_tools/de/' target="_blank" rel="noopener noreferrer"><IoInformationCircleOutline style={{ fontSize: '20px', color: '#007BFF', transform: 'translateY(30%)'}} /></a></p>
+                <p>Jährlicher Stromertrag kwh pro kWp <a title="PVGIS Ertragsrechner" href='https://re.jrc.ec.europa.eu/pvg_tools/de/' target="_blank" rel="noopener noreferrer"><IoInformationCircleOutline style={{ fontSize: '20px', color: '#007BFF', transform: 'translateY(30%)'}} /></a></p>
                 <InputNumber value={stromErtrag} setValue={setStromErtrag} setIsError={setIsError} />
             </div>
 
@@ -101,7 +101,7 @@ const Rechner = () => {
                 </div>
 
                 <div className='rechner_input'>
-                    <p>Strompreis erhöhung pro Jahr in %</p>
+                    <p>Strompreiserhöhung pro Jahr in %</p>
                     <InputNumber value={stromPreisErhohung} setValue={setStromPreisErhohung} setIsError={setIsError} />
                 </div>
             </>
@@ -116,7 +116,7 @@ const Rechner = () => {
 
         <div className='containerInput'>
 
-            <p className='customSchrift'>Laufendekosten</p>
+            <p className='customSchrift'>Laufende Kosten</p>
 
             <div className='rechner_input'>
                 <p>Betriebskosten pro Jahr</p>
@@ -153,7 +153,7 @@ const Rechner = () => {
             </div>
 
             <div className='rechner_input'>
-                <p>vergleich Rendite in %</p>
+                <p>Vergleich Rendite in %</p>
                 <InputNumber value={vergleichRenditeProzent} setValue={setVergleichRenditeProzent}  setIsError={setIsError}/>
             </div>
         </div>
